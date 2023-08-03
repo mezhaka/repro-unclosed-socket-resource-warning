@@ -13,7 +13,12 @@ Fails:
 conda deactivate && mamba env remove -n vcr_resrouce_warning && mamba env create -f error-environment.yml && conda activate vcr_resrouce_warning && rm -f test_generate_resource_warning.yaml && python -m pytest
 ```
 
-# Failure
+# Non platform specific environment file
+There is a non-platform-specific.yml -- it does not generate an error, but if you remove one of the
+packages (see comment in the yml), the test fails.
+
+
+# Observed failure
 This is how the failure look like:
 ```
 =========================================================================================================== test session starts ============================================================================================================
@@ -94,3 +99,4 @@ E               ResourceWarning: unclosed <ssl.SSLSocket fd=16, family=AddressFa
 ========================================================================================================= short test summary info ==========================================================================================================
 FAILED test_resource_warning.py::test_generate_resource_warning - pytest.PytestUnraisableExceptionWarning: Exception ignored in: <ssl.SSLSocket fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>
 ```
+

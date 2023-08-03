@@ -1,0 +1,16 @@
+name: vcr_resrouce_warning
+channels:
+  - conda-forge
+dependencies:
+  # ---------------------------
+  # Actual runtime dependencies
+  # ---------------------------
+  - python ~= 3.8.0
+  - requests ~= 2.25
+  - pytest
+  - vcrpy
+
+    # seems like removing either of those makes it work
+  - python-json-logger ~=0.1.0
+  - fs ~=2.0
+
