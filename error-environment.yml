@@ -1,8 +1,8 @@
-name: vcr-resource-warning
+name: vcr_resrouce_warning
 channels:
   - conda-forge
-  - defaults
 dependencies:
+  - appdirs=1.4.4=pyh9f0ad1d_0
   - brotli-python=1.0.9=py38h4cd09af_9
   - bzip2=1.0.8=h0d85af4_4
   - ca-certificates=2023.7.22=h8857fd0_0
@@ -10,6 +10,7 @@ dependencies:
   - charset-normalizer=3.2.0=pyhd8ed1ab_0
   - colorama=0.4.6=pyhd8ed1ab_0
   - exceptiongroup=1.1.2=pyhd8ed1ab_0
+  - fs=2.4.16=pyhd8ed1ab_0
   - idna=3.4=pyhd8ed1ab_0
   - iniconfig=2.0.0=pyhd8ed1ab_0
   - libcxx=16.0.6=hd57cbcb_0
@@ -25,11 +26,13 @@ dependencies:
   - pysocks=1.7.1=pyha2e5f31_6
   - pytest=7.4.0=pyhd8ed1ab_0
   - python=3.8.17=hf9b03c3_0_cpython
+  - python-json-logger=0.1.11=py_0
   - python_abi=3.8=3_cp38
   - pyyaml=6.0=py38hef030d1_5
   - readline=8.2=h9e318b2_1
   - requests=2.31.0=pyhd8ed1ab_0
   - setuptools=68.0.0=pyhd8ed1ab_0
+  - six=1.16.0=pyh6c4a22f_0
   - tk=8.6.12=h5dbffcc_0
   - tomli=2.0.1=pyhd8ed1ab_0
   - urllib3=2.0.4=pyhd8ed1ab_0
@@ -39,4 +42,3 @@ dependencies:
   - xz=5.2.6=h775f41a_0
   - yaml=0.2.5=h0d85af4_2
   - yarl=1.9.2=py38hcafd530_0
-prefix: /Users/ant/opt/miniconda3/envs/vcr-resource-warning
