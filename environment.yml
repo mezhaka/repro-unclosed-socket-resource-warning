@@ -1,0 +1,9 @@
+name: vcr_resrouce_warning
+channels:
+  - conda-forge
+dependencies:
+  - python ~= 3.8.0
+  - requests ~= 2.25
+  - pytest
+  - vcrpy
+
